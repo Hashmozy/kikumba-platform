@@ -277,3 +277,47 @@ a {
 #products h2 {
   color: #034208b7;
 }
+
+.items {
+  padding-top: 40px;
+}
+
+.card {
+  width: 100%;
+  max-width: 250px;
+  /* border: 2px solid #034208b7; */
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 5px #034208b7;
+}
+
+.card-title {
+  margin: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #18421cb7;
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  color: #fffbf8c9;
+  font-size: 18px;
+}
+
+.card-content .fa-cart-shopping {
+  color: #fff;
+}
+
+.card-content h6 {
+  font-weight: 300;
+  font-style: italic;
+}
