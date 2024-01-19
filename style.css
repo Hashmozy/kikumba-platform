@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;0,900;1,100;1,300;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  color: #1d0f04;
+  background-color: rgb(250, 250, 250);
+}
+
+/* pre css */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Centers it, sets a maximum width and makes 
+sure elements can flow past it*/
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: visible;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 65px;
+  font-weight: 600;
+  margin: 10px 0;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+/* All images must not be 
+larger than parent container */
+img {
+  width: 100%;
+}
+
+/* No styling on list items */
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* style the cart icon */
+.cart {
+  font-size: 30px;
+  color: #034208b7;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+/* navbar */
+#header {
+  padding: 10px 80px;
+  background: #8c9b925a;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #034208b7;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.logo i {
+  margin-right: 16px;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.nav-item a {
+  color: #1d0f04;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-item a:hover,
+.nav-item a.active {
+  color: #034208b7;
+}
+
+.nav-item a.active::after,
+.nav-item a:hover::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #034208b7;
+  position: absolute;
+  bottom: -2px;
+  left: 2px;
+}
+
+/* home section */
+#hero {
+  background-image: url(images/man.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+  padding: 0 80px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hero p {
+  font-size: 34px;
+  font-weight: 300;
+  margin: 10px 0;
+  line-height: 1.8;
+  font-style: italic;
+  color: #034208b7;
+}
+
+#hero p span {
+  font-weight: 900;
+}
+
+#hero h4 {
+  color: #034208b7;
+}
+
+.trade-offer {
+  margin-left: 10%;
+}
+
+.trade {
+  display: flex;
+  align-items: center;
+}
+
+.trade .fa-hand-holding-heart {
+  font-size: 35px;
+  color: #034208b7;
+  margin-left: 15px;
+}
+
+#hero button {
+  background-image: url("images/button.png");
+  background-color: transparent;
+  border: none;
+  padding: 14px 80px 14px 65px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fffbf8c9;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+/* feature section */
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+
+.fe-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 3px 20px #8c9b925a;
+  padding: 18px;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.fe-box:hover {
+  box-shadow: 0 3px 20px #8c9b92;
+}
+
+.fe-box img {
+  width: 150px;
+}
+
+.fe-box h6 {
+  font-size: 14px;
+  color: #034208b7;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+.fe-box:nth-child(1) h6 {
+  background-color: rgb(209, 233, 241);
+  padding: 4px;
+  border-radius: 20%;
+}
+
+.fe-box:nth-child(2) h6 {
+  background-color: rgba(240, 177, 244, 0.495);
+  padding: 4px;
+  border-radius: 20%;
+}
+
+.fe-box:nth-child(3) h6 {
+  background-color: rgba(199, 239, 180, 0.55);
+  padding: 4px;
+  border-radius: 20%;
+}
+
+.fe-box:nth-child(4) h6 {
+  background-color: rgba(121, 198, 222, 0.55);
+  padding: 4px;
+  border-radius: 20%;
+}
+
+.fe-box:nth-child(5) h6 {
+  background-color: rgba(195, 146, 237, 0.509);
+  padding: 4px;
+  border-radius: 20%;
+}
+
+.fe-box:nth-child(6) h6 {
+  background-color: rgba(245, 221, 195, 0.584);
+  padding: 4px;
+  border-radius: 20%;
+}
+
+/* products section */
+
+#products h2,
+#products p {
+  text-align: center;
+}
+
+#products h2 {
+  color: #034208b7;
+}
